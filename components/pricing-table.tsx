@@ -105,7 +105,7 @@ export function PricingTable() {
       </div>
 
       <a
-        href={`mailto:${site.email}?subject=Session%20enquiry`}
+        href={site.emailHref}
         className="mt-10 inline-flex items-center gap-2 border-b border-border pb-1 font-mono text-[10px] tracking-[0.18em] text-foreground uppercase transition-colors hover:border-foreground"
       >
         Ask about dates

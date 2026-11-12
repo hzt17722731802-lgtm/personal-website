@@ -32,6 +32,11 @@ Open <http://localhost:3000>.
 | Photography (sources, alt text, captions)      | `lib/photos.ts`        |
 | Colours, fonts, spacing tokens                 | `app/globals.css`      |
 
+The visible address and the mail link target are configured separately in
+`lib/site.ts`: `email` is the text shown on the page (`hello@example.com`) and
+`emailHref` is what every email link opens (`mailto:mailto@example.com`).
+Update both when adapting the template.
+
 Fonts are **Instrument Serif** for display type, **Geist** for body copy and
 **Geist Mono** for the small uppercase labels. They are loaded with
 `next/font/google`, so the font files are self-hosted at build time.

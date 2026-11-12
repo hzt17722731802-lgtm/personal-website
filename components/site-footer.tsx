@@ -44,7 +44,7 @@ export function SiteFooter() {
             <ul className="mt-4 space-y-2.5">
               <li>
                 <a
-                  href={`mailto:${site.email}`}
+                  href={site.emailHref}
                   className="text-sm text-foreground underline decoration-border decoration-1 underline-offset-4 transition-colors hover:decoration-foreground"
                 >
                   {site.email}

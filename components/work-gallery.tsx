@@ -45,10 +45,10 @@ const slots = [
 
 export function WorkGallery({
   photos,
-  email,
+  emailHref,
 }: {
   photos: Photo[]
-  email: string
+  emailHref: string
 }) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
   const dialogRef = useRef<HTMLDialogElement>(null)
@@ -124,7 +124,7 @@ export function WorkGallery({
             Tell me what you are looking for and I will send a link.
           </p>
           <a
-            href={`mailto:${email}?subject=Portfolio%20request`}
+            href={emailHref}
             className="mt-6 inline-flex items-center gap-2 self-start border-b border-border pb-1 font-mono text-[10px] tracking-[0.18em] text-foreground uppercase transition-colors hover:border-foreground"
           >
             Ask for the full portfolio

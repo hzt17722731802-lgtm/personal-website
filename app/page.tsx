@@ -57,7 +57,7 @@ export default function Page() {
                   </span>
                 </a>
                 <a
-                  href={`mailto:${site.email}`}
+                  href={site.emailHref}
                   className="border-b border-border pb-1 font-mono text-[10px] tracking-[0.18em] text-muted-foreground uppercase transition-colors hover:border-foreground hover:text-foreground"
                 >
                   {site.email}
@@ -116,7 +116,7 @@ export default function Page() {
               </p>
             </div>
 
-            <WorkGallery photos={galleryPhotos} email={site.email} />
+            <WorkGallery photos={galleryPhotos} emailHref={site.emailHref} />
 
             <figure className="mt-20 lg:mt-28">
               <div className="relative aspect-[16/10] overflow-hidden bg-muted sm:aspect-[21/9]">
@@ -266,7 +266,7 @@ export default function Page() {
                   Tell me what you’re planning.
                 </h2>
                 <a
-                  href={`mailto:${site.email}`}
+                  href={site.emailHref}
                   className="mt-10 inline-block font-serif text-[clamp(1.75rem,4vw,2.85rem)] leading-none tracking-[-0.02em] underline decoration-border decoration-1 underline-offset-[10px] transition-colors hover:decoration-foreground"
                 >
                   {site.email}
