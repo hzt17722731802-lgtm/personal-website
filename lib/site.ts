@@ -5,19 +5,22 @@
  */
 export const site = {
   // PLACEHOLDER — replace with your own name.
-  name: "Mara Voss",
+  name: "Alex Rowan",
   role: "Photographer",
-  // PLACEHOLDER — replace with the email address you actually read.
-  email: "hello@maravoss.com",
+  // PLACEHOLDER — address shown on the page. Every mail link uses emailHref.
+  email: "hello@example.com",
+  // PLACEHOLDER — target of every email link, kept separate from the display
+  // text above so the visible address can differ from the mailbox opened.
+  emailHref: "mailto:mailto@example.com",
   // PLACEHOLDER — replace with your city and region.
   location: "Portland, Oregon",
   availability: "Booking spring – autumn 2026",
   // PLACEHOLDER — replace with your own profile, or remove the link from
   // components/site-footer.tsx and the contact section in app/page.tsx.
   instagram: {
-    handle: "@maravoss",
+    handle: "@alexrowan",
     href: "https://www.instagram.com/",
   },
   description:
-    "Portrait, editorial and wedding photography by Mara Voss, based in Portland, Oregon. Natural light, unhurried sessions, photographs made to last.",
+    "Portrait, editorial and wedding photography by Alex Rowan, based in Portland, Oregon. Natural light, unhurried sessions, photographs made to last.",
 } as const
